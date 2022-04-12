@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --anchor: hsl(228, 45%, 44%);
+    --outfit: "Outfit"
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--Light-gray);
+}
+section{
+    width: 300px;
+    height: 430px;
+    background-color: var(--White);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 2px  rgba(0,0,0,0.1), -2px -2px 10px 2px  rgba(0,0,0,0.1);
+}
+section .img{
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+section .img img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+section .text{
+    width: 100%;
+    height: 40%;
+    display: grid;
+    place-items: center;
+    padding: 0px 20px;
+    text-align: center;
+}
+section .text p:first-child{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--outfit);
+}
+section .text p:last-child{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    margin-bottom: 30px;
+    font-family: var(--outfit);
+}
